@@ -1,15 +1,20 @@
+import { BookRestProvider } from './../../providers/book-rest/book-rest';
 import { Book } from './../../models/book.model';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { BookRestProvider } from '../../providers/book-rest/book-rest';
 
-
+/**
+ * Generated class for the BookEditPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
 
 @Component({
-  selector: 'page-bookdetail',
-  templateUrl: 'bookdetail.html',
+  selector: 'page-book-edit',
+  templateUrl: 'book-edit.html',
 })
-export class BookdetailPage {
+export class BookEditPage {
 
   bookid:number;
   book:Book;
